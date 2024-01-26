@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Project Product</title>
+</head>
+
+<body class="container">
+    <div class="wrapper">
+        <div class="product-box">
+            <div class="all-images">
+                <div class="small-images">
+                    <img src="images/image-1.jpg" alt="" onclick="imgChange(this)">
+                    <img src="images/image-2.jpg" alt="" onclick="imgChange(this)">
+                    <img src="images/image-3.jpg" alt="" onclick="imgChange(this)">
+                    <img src="images/image-4.jpg" alt="" onclick="imgChange(this)">
+                </div>
+                <div class="main-images">
+                    <img src="images/image-1.jpg" id="imagebox" alt="">
+                </div>
+            </div>
+            </div>
+
+            <div class="text">
+                <div class="content">
+                    <p class="brand">Brand: Apple</p>
+                    <h2>APPLE iPhone 15 pro Max(250 GB)</h2>
+                    <div class="review">
+                        <span>(4.6)</span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <div class="prise-box">
+                        <p class="price">&#8377; 77,900</p>
+                        <strike>&#8377; 89,500</strike>
+                    </div>
+                    <p>Color : <select name="size" id="">
+                            <option value="select color">select color</option>
+                            <option value="black">black</option>
+                            <option value="blue">blue</option>
+                            <option value="green">green</option>
+                            <option value="purple">purple</option>
+                        </select></p>
+
+                    <form action="#">
+                        <p>Quantity <input type="text" value="1"></p>
+                        <button>
+                            <span class="fa fa-shopping-cart"></span>
+                            add to cart
+                        </button>
+                        <button class="buy">
+                            <span class="fa fa-shopping-cart"></span>
+                            buy
+                        </button>
+                    </form>
+                </div>
+            </div>
+    </div>
+</body>
+<script src="javaScr/javaScr.js"></script>
+
+</html>
