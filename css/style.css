@@ -9,7 +9,7 @@
     width: 100%;
 }
 .wrapper{
-    width: 90%;
+    width: 95%;
     height: 100vh;
     margin: auto;
     display: flex;
@@ -48,7 +48,6 @@ p{
 .brand{
     background-color: #008000;
     width: fit-content;
-    min-width: 200px;
     counter-reset: #fff;
     font-size: 14px;
     padding: 2px 5px;
@@ -108,6 +107,30 @@ button .fa{
     background-color: rgb(201, 97, 57);
 }
 
+select,p{
+    font-size: 17px;
+}
+
+
+@media only screen and (max-width:1700px){
+    .all-images{
+        height: 60vh;
+    }
+    .small-images img{
+        height: 13vh;
+        margin-bottom: 5px;
+    }
+ 
+} 
+
+@media only screen and (max-width:1300px){
+    
+    h2{
+        min-width: 290px;
+    }
+}
+
+
 @media only screen and (max-width:1200px){
     .wrapper{
         flex-direction: column;
@@ -118,6 +141,43 @@ button .fa{
         padding-top: 50px;
     }
 }
+
+@media only screen and (max-width:950px){
+    .all-images{
+        height: 45vh;
+    }
+    .small-images img{
+        height: 10vh;
+        margin-bottom: 5px;
+    }
+ 
+} 
+@media only screen and (max-width:700px){
+    .all-images{
+        flex-direction: column;
+        height: auto;
+    }
+    .small-images{
+        flex-direction: row;
+        justify-content: space-evenly;
+        order: 1;
+    }
+    .product-box{
+        width: 100%;
+    }
+
+    .main-images img{
+        width: 100%;
+    }
+
+    .small-images img{
+        width: 25%;
+    }
+  h2{
+    font-size: 25px;
+  }  
+}
+
 @media only screen and (max-width:600px){
     .all-images{
         flex-direction: column;
