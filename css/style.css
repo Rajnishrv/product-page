@@ -125,7 +125,7 @@ button .fa {
 }
 
 select,
-p {
+p,input {
     font-size: 17px;
 }
 
