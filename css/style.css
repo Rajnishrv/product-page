@@ -1,14 +1,16 @@
 /* CSS reser */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-.container{
+
+.container {
     width: 100%;
 }
-.wrapper{
+
+.wrapper {
     width: 95%;
     height: 100vh;
     margin: auto;
@@ -16,36 +18,44 @@
     align-items: center;
     justify-content: space-evenly;
 }
-.text{
+
+.text {
     flex-basis: 45%;
 }
-.all-images{
+
+.all-images {
     height: 80vh;
     display: flex;
     /* border: 3px solid orange; */
     /* border-radius: 15px; */
-    
+
 }
-.small-images{
+
+.small-images {
     display: flex;
     flex-direction: column;
 }
-.small-images img{
+
+.small-images img {
     height: 19vh;
     margin-bottom: 9px;
     cursor: pointer;
     opacity: 0.6;
 }
-.small-images img:hover{
+
+.small-images img:hover {
     opacity: 1;
 }
-.main-images img{
+
+.main-images img {
     height: 100%;
 }
-p{
+
+p {
     margin-bottom: 20px;
 }
-.brand{
+
+.brand {
     background-color: #008000;
     width: fit-content;
     counter-reset: #fff;
@@ -53,12 +63,14 @@ p{
     padding: 2px 5px;
     color: white;
 }
-h2{
+
+h2 {
     font-size: 35px;
     color: #555;
     margin-bottom: 20px;
 }
-.review{
+
+.review {
     background-color: #008000;
     display: inline-block;
     color: #fff;
@@ -66,28 +78,32 @@ h2{
     border-radius: 5px;
     font-size: 15px;
 }
-.review .fa{
+
+.review .fa {
     counter-reset: #fff;
 }
-.price{
+
+.price {
     color: rgb(29, 28, 28);
     font-size: 26px;
     font-weight: bold;
     padding-top: 10px;
     padding-right: 10px;
 }
-.price-pox{
+
+.price-pox {
     display: flex;
     align-items: center;
 }
-input{
+
+input {
     width: 30px;
     border: 1px solid #ccc;
     font-weight: bold;
     text-align: center;
 }
 
-button{
+button {
     width: 140px;
     color: #fff;
     font-size: 15px;
@@ -99,107 +115,118 @@ button{
     box-sizing: border-box;
     cursor: pointer;
 }
-button .fa{
+
+button .fa {
     margin-right: 10px;
 }
 
-.buy{
+.buy {
     background-color: rgb(201, 97, 57);
 }
 
-select,p{
+select,
+p {
     font-size: 17px;
 }
 
-
-@media only screen and (max-width:1700px){
-    .all-images{
+/* responsive */
+@media only screen and (max-width:1700px) {
+    .all-images {
         height: 60vh;
     }
-    .small-images img{
+
+    .small-images img {
         height: 13vh;
         margin-bottom: 5px;
     }
- 
-} 
+}
 
-@media only screen and (max-width:1300px){
-    
-    h2{
+@media only screen and (max-width:1300px) {
+
+    h2 {
         min-width: 290px;
     }
 }
 
 
-@media only screen and (max-width:1200px){
-    .wrapper{
+@media only screen and (max-width:1200px) {
+    .wrapper {
         flex-direction: column;
         height: auto;
         padding: 4% 0;
     }
-    .text{
+
+    .text {
         padding-top: 50px;
     }
 }
 
-@media only screen and (max-width:950px){
-    .all-images{
+@media only screen and (max-width:950px) {
+    .all-images {
         height: 45vh;
     }
-    .small-images img{
+
+    .small-images img {
         height: 10vh;
         margin-bottom: 5px;
     }
- 
-} 
-@media only screen and (max-width:700px){
-    .all-images{
-        flex-direction: column;
-        height: auto;
-    }
-    .small-images{
-        flex-direction: row;
-        justify-content: space-evenly;
-        order: 1;
-    }
-    .product-box{
-        width: 100%;
-    }
 
-    .main-images img{
-        width: 100%;
-    }
-
-    .small-images img{
-        width: 25%;
-    }
-  h2{
-    font-size: 25px;
-  }  
 }
 
-@media only screen and (max-width:600px){
-    .all-images{
+@media only screen and (max-width:700px) {
+    .all-images {
         flex-direction: column;
         height: auto;
     }
-    .small-images{
+
+    .small-images {
         flex-direction: row;
         justify-content: space-evenly;
         order: 1;
     }
-    .product-box{
+
+    .product-box {
         width: 100%;
     }
 
-    .main-images img{
+    .main-images img {
         width: 100%;
     }
 
-    .small-images img{
+    .small-images img {
         width: 25%;
     }
-  h2{
-    font-size: 25px;
-  }  
+
+    h2 {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .all-images {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .small-images {
+        flex-direction: row;
+        justify-content: space-evenly;
+        order: 1;
+    }
+
+    .product-box {
+        width: 100%;
+    }
+
+    .main-images img {
+        width: 100%;
+    }
+
+    .small-images img {
+        width: 25%;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
 }
