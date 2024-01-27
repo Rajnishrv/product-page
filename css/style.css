@@ -129,6 +129,32 @@ p,input {
     font-size: 17px;
 }
 
+/* color button */
+
+.colorButton{
+    border-radius: 50%;
+   width: 30px;
+   height: 30px;
+   border: 1px solid black;
+}
+.colorButton:hover{
+    box-shadow: 1px 1px 3px black, -1px -1px 3px black;
+}
+
+#white{
+    background-color: white;
+}
+#black{
+    background-color: black;
+}
+#blue{
+    background-color: blue;
+}
+#natural{
+    background-color: silver;
+}
+
+
 /* responsive */
 @media only screen and (max-width:1700px) {
     .all-images {
