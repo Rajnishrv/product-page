@@ -26,9 +26,6 @@
 .all-images {
     height: 80vh;
     display: flex;
-    /* border: 3px solid orange; */
-    /* border-radius: 15px; */
-
 }
 
 .small-images {
@@ -130,37 +127,21 @@ p,input {
 }
 
 /* color button */
-
 .colorButton{
-    border-radius: 50%;
-   width: 30px;
-   height: 30px;
+    border-radius: 5px;
+   width: 40px;
    border: 1px solid black;
 }
 .colorButton:hover{
     box-shadow: 1px 1px 3px black, -1px -1px 3px black;
+    
 }
-
-#white{
-    background-color: white;
-}
-#black{
-    background-color: black;
-}
-#blue{
-    background-color: blue;
-}
-#natural{
-    background-color: silver;
-}
-
 
 /* responsive */
 @media only screen and (max-width:1700px) {
     .all-images {
         height: 60vh;
     }
-
     .small-images img {
         height: 13vh;
         margin-bottom: 5px;
@@ -168,12 +149,10 @@ p,input {
 }
 
 @media only screen and (max-width:1300px) {
-
     h2 {
         min-width: 290px;
     }
 }
-
 
 @media only screen and (max-width:1200px) {
     .wrapper {
@@ -181,22 +160,18 @@ p,input {
         height: auto;
         padding: 4% 0;
     }
-
     .text {
         padding-top: 50px;
     }
 }
-
 @media only screen and (max-width:950px) {
     .all-images {
         height: 45vh;
     }
-
     .small-images img {
         height: 10vh;
         margin-bottom: 5px;
     }
-
 }
 
 @media only screen and (max-width:700px) {
