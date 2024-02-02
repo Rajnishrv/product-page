@@ -14,9 +14,8 @@ function black() {
     mainImage.src = mainImage.src.replace('White', 'Black');
     mainImage.src = mainImage.src.replace('Natural', 'Black');
     mainImage.src = mainImage.src.replace('Blue', 'Black');
-
-     
 }
+
 // for white
 function white() {
     var smallImages = document.querySelectorAll('.small-images img');
@@ -52,6 +51,7 @@ function blue() {
      mainImage.src = mainImage.src.replace('Natural', 'Blue');
      mainImage.src = mainImage.src.replace('White', 'Blue');
 }
+
 // for natural
 function natural() {
     var smallImages = document.querySelectorAll('.small-images img');
@@ -69,8 +69,6 @@ function natural() {
     mainImage.src = mainImage.src.replace('White', 'Natural');
     mainImage.src = mainImage.src.replace('Blue', 'Natural');
 }
-
-
 
 function imgChange(smallImg){
     var fullImg = document.getElementById("imagebox");
